@@ -1,7 +1,15 @@
-import math from '~/src/lib';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-console.log('Math:');
-console.log('1 + 2 = ', math.add(1, 2));
-console.log('1 - 2 = ', math.sub(1, 2));
-console.log('1 * 2 = ', math.mul(1, 2));
-console.log('1 / 2 = ', math.div(1, 2));
+class App extends Component {
+  render() {
+    return (
+      <h1>Hello, World</h1>
+    )
+  }
+}
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
