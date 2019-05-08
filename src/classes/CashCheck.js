@@ -1,10 +1,13 @@
+import CashCheckItem from './CashCheckItem';
+
 class CashCheck {
   constructor(props) {
     this.items = [];
   }
 
   addItem(product, count, price) {
-    this.items.push({product, count, price})
+    const item = new CashCheckItem(product, count, price);
+    this.items.push(item);
   }
 
   removeItem(product) {
@@ -13,7 +16,7 @@ class CashCheck {
 
   getTotal() {
     return this.items.reduce((total, item) => (
-        {amount: total.amount + item.count, cost: total.cost + item.price * item.count}
+        {amount: total.amount + item.count, cost: total.cost + item.cost}
       ),
       {amount: 0, cost: 0}
     )

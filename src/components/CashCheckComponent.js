@@ -18,7 +18,7 @@ class CashCheckComponent extends Component {
               Product '{item.product}',
               count: {item.count},
               price: {item.price},
-              cost: {item.count * item.price}
+              cost: {item.cost}
             </li>
           ))}
         </ol>

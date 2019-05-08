@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import CashCheckComponent from '~src/components/CashCheck';
+import CashCheckComponent from '~src/components/CashCheckComponent';
 
 ReactDOM.render(
   <CashCheckComponent />,
